@@ -1,0 +1,11 @@
+﻿@model ControllersDemo.Models.Person
+
+@{
+    ViewBag.Title = "Params2";
+}
+
+<h2>Params2</h2>
+<p>First name: @Model.FirstName</p>
+<p>Last name: @Model.LastName</p>
+<p>DoB: @String.Format("{0:d}",Model.DateOfBirth)</p>
+<p>ModelState is valid: @ViewData.ModelState.IsValid</p>

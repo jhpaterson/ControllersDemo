@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Output:Index</h2>
+@* generate URL from named route *@
+@Html.RouteLink("About : Home", "Default", new { action = "About", controller = "Home" })<br /> 
+@* generate URL from route data *@
+@Html.ActionLink("Index : Output", "Index", "Output")<br />
+
+
